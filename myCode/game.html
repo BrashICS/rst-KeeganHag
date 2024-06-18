@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman Game</title>
+  <script src="https://misterbrash.github.io/Hangman_DB/hangman_helper.js" defer></script>
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      background-color: lightsteelblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="game_area">
+    <img id="hangman_structure" src="hangman_rope.png" alt="Hangman">
+    <div class="category_container">
+      <h2 class="category" id="category_display">Category:</h2>
+    </div>
+    <div class="word_container">
+      <div id="underline"></div>
+    </div>
+    <div class="guessed_letters">
+      <p id="guessed_letters">Guessed Letters:</p>
+    </div>
+    <div class="input_container">
+      <input type="text" id="letter_input" maxlength="1" placeholder="Enter a Letter" disabled>
+      <button id="enter_button" disabled>Enter</button>
+    </div>
+    <div class="result_container">
+      <h2 id="result_message"></h2>
+      <button id="play_again_button">Play Again</button>
+    </div>
+  </div>
+
+  <div class="Button">
+    <a href="index.html">
+   <button id="index_button">Home</button></a>
+   
+</body>
+</html>
